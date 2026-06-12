@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love You A Lot Kanna ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#fff5f8,#ffe4ef);
+overflow:hidden;
+}
+
+.page{
+display:none;
+height:100vh;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+.active{
+display:flex;
+}
+
+h1,h2{
+color:#ff5c99;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#ff8fba;
+color:white;
+cursor:pointer;
+font-size:18px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+max-width:800px;
+max-height:60vh;
+overflow:auto;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(5,90px);
+gap:12px;
+}
+
+.box{
+background:white;
+border:2px solid #ffb6d5;
+padding:25px;
+border-radius:15px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.box:hover{
+transform:scale(1.08);
+}
+
+.popup{
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding:25px;
+border-radius:20px;
+z-index:999;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+.heart{
+position:absolute;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-120px);
+}
+}
+
+.confetti{
+position:fixed;
+top:-20px;
+animation:fall 3s linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh) rotate(720deg);
+}
+}
+
+.love{
+font-size:50px;
+animation:pulse 1.5s infinite;
+color:#ff4d94;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.1);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+
+<audio autoplay loop controls>
+<source src="romantic.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Popup -->
+
+<div id="popup" class="popup">
+
+<h2 id="pt"></h2>
+
+<p id="pc"></p>
+
+<button onclick="closePop()">
+Close
+</button>
+
+</div>
+
+<!-- PAGE 1 -->
+
+<div class="page active" id="p1">
+
+<h1>💖 Happiest Birthday Kanna 💖</h1>
+           💖And You Are Entering Your Last Teen Year💖
+<button onclick="go('p2')">
+Click Here❤️
+</button>
+
+</div>
+
+<!-- PAGE 2 LOVE LETTER -->
+
+<div class="page" id="p2">
+
+<h1>💌Love You More Than Anything </h1>
+
+<div class="card">
+
+<p>
+Happy Birthday Sai Pranav💖,
+
+Congratulations! You are entering into your last teen year (19 years). We met after so many years, and I'm so fortunate that I met you.
+
+Our story started with no expectations, no commitments, nothing. A story that started with saying, "I'm scared of losing you," and another story that started with saying, "I'm scared of getting attached to you."
+
+A beautiful and innocent love. A girl who is a bit mad and a boy who is completely mad (haha, I know you are). A love filled with innocence, care, happiness, self-respect, and laughter. 
+We both are genuine, talkative, mad, innocent, and what not—romantic too.
+I love you a lot. You're extremely gorgeous. You met a girl who is scared of relationships, irked by fake people around her, and who has seen toxic relationships around her, especially those of her friends.
+ A girl who lost trust and interest in love met a marvelous little boy who was looking for love (maybe). An innocent little boy who literally knows nothing except cricket, games, and roaming around with friends.
+ A guy who is extremely innocent, who doesn't even know how to talk to girls, a boy who couldn't confess his feelings to anyone, and a boy who is happy with his own life.
+
+And then we finally met after 19 long years, yet somehow we still tried to meet each other.
+
+A girl who is in a dilemma, who lost trust, doesn't believe in long-lasting relationships, who is terrified of heart breaks, who overthinks, and who needs reassurance. 
+And a guy who couldn't confess his feelings but loves her eternally. A guy who doesn't know how to handle her when she is incredibly angry but is scared of losing her.
+ A guy who doesn't even know how to shower love on her but tries every possible way to make her feel loved. 
+A guy who doesn't know how to start a conversation with her but tries all his silly ways to approach her—and that's crazy love💖.
+
+An innocent little boy who is madly in love with her.
+
+I never thought I would fall for you, but today, after 5 months of constantly thinking about you, I have fallen for you. I have fallen hard, very hard, and I keep falling for you every single day. 
+This beautiful little girl loves everything about this guy—his eyes, his face, his lips, his body, and what not. You're the hottest man in the world.
+I will be there for you until our relationship lasts, and let's make it happen. And even if something goes wrong someday, I will definitely remain one of your well-wishers.
+ You deserve all the happiness in this world. You are meant to experience every beautiful thing this world has to offer from every corner of it.
+I promise I will stay by your side during tough times. I will hold your hand, hug you tightly, and scream, "Nothing is going to happen, I'm here for you."
+You're my medicine, my happiness, and my everything. The love we have for each other is enormous.
+Sometimes I wonder how much I have become a small kid in front of you. Your efforts, your patience, your caring nature.
+ Sometimes I wonder how this innocent little boy talks so wisely and maturely. 
+This cute little boy is turning into a mature man, and this girl is becoming the strongest version of herself in his presence.
+
+I'm fortunate to have such a supportive man. LOVE YOU PRAN❤️
+
+We fight, we talk, we solve things, but I love the fact that we are never too serious about anything.
+
+Love you the most. 💖
+
+</p>
+
+</div>
+
+<br>
+
+<button onclick="go('p3')">
+Next ➜
+</button>
+
+</div>
+
+<!-- PAGE 3 SONGS -->
+
+<div class="page" id="p3">
+
+<h1>🎵 Songs I would Love to listen with you 🎵</h1>
+
+<div class="grid">
+
+<div class="box" onclick="song('Bairan')">1</div>
+<div class="box" onclick="song('For a reason')">2</div>
+<div class="box" onclick="song('Perfect')">3</div>
+<div class="box" onclick="song('Untill I found her')">4</div>
+<div class="box" onclick="song('Kitab(Ik u dk this but listen)')">5</div>
+</div>
+
+<br>
+
+<button onclick="go('p4')">
+Next ➜
+</button>
+
+</div>
+
+<!-- PAGE 4 -->
+
+<div class="page" id="p4">
+
+<h1>🌷 What You Should Change 🌷</h1>
+
+<div class="grid">
+
+<div class="box" onclick="msg('Change',care me (ik u do) but care me more'')">1</div>
+
+<div class="box" onclick="msg('Change','Should not irritate me all the time')">2</div>
+
+<div class="box" onclick="msg('Change',If you want to talk to me then text me immediatley dont think twice')">3</div>
+
+<div class="box" onclick="msg('Change','you should change your texting style, you text good but to flirt girls your style wont work')">4</div>
+
+<div class="box" onclick="msg('Change','and what else you are perfect as you are')">5</div>
+
+</div>
+
+<br>
+
+<button onclick="go('p5')">
+Next ➜
+</button>
+
+</div>
+
+<!-- PAGE 5 -->
+
+<div class="page" id="p5">
+
+<h1>🎁 Things I we would do together 🎁</h1>
+
+<div class="grid">
+
+<div class="box" onclick="msg('Surprise','video calls (talks, hugs, kisses)❤️')">1</div>
+
+<div class="box" onclick="msg('Surprise','Bike and car rides with you💌')">2</div>
+
+<div class="box" onclick="msg('Surprise','Watching movie together 🍿')">3</div>
+
+<div class="box" onclick="msg('Surprise','Long Walks🌸')">4</div>
+
+<div class="box" onclick="msg('Surprise','Making couple reels with you 📸')">5</div>
+
+<div class="box" onclick="msg('Surprise','Cooking Together🤍')">6</div>
+
+<div class="box" onclick="msg('Surprise',' Hugs, kisses, when we meet holding hands walking all the way together✨')">7</div>
+
+<div class="box" onclick="msg('Surprise','Cute Love you texts from you  💖')">8</div>
+
+<div class="box" onclick="msg('Surprise',' I would love to make you angry ☎️')">9</div>
+
+<div class="box" onclick="msg('Surprise','Need you by myside everysingle minute and every single second  💕')">10</div>
+
+</div>
+
+<br>
+
+<button onclick="go('p6')">
+Final Page ➜
+</button>
+
+</div>
+
+<!-- PAGE 6 -->
+
+<div class="page" id="p6">
+
+<div class="love">
+❤️ LOVE YOU A LOT KANNA ❤️
+</div>
+
+<h2>
+
+</h2>
+
+<p>
+And I will miss you every single second  💖
+</p>
+
+<p>
+🌸 🤍 💖 🤍 🌸
+</p>
+jiodeijdekw 
+</div>
+
+<script>
+
+function go(id){
+
+document.querySelectorAll('.page').forEach(p=>{
+p.classList.remove('active');
+});
+
+document.getElementById(id).classList.add('active');
+
+}
+
+function msg(title,content){
+
+document.getElementById('pt').innerText=title;
+
+document.getElementById('pc').innerText=content;
+
+document.getElementById('popup').style.display='block';
+
+}
+
+function closePop(){
+
+document.getElementById('popup').style.display='none';
+
+}
+
+function song(name){
+
+confetti();
+
+msg(
+'🎵 Favourite Song',
+name
+);
+
+}
+
+function confetti(){
+
+for(let i=0;i<60;i++){
+
+let e=document.createElement('div');
+
+e.className='confetti';
+
+e.innerHTML=['💖','✨','🎊','🌸'][Math.floor(Math.random()*4)];
+
+e.style.left=Math.random()*100+'vw';
+
+document.body.appendChild(e);
+
+setTimeout(()=>{
+e.remove();
+},3000);
+
+}
+
+}
+
+setInterval(()=>{
+
+let h=document.createElement('div');
+
+h.className='heart';
+
+h.innerHTML=Math.random()>0.5?'💖':'💕';
+
+h.style.left=Math.random()*100+'vw';
+
+h.style.fontSize=(20+Math.random()*25)+'px';
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+h.remove();
+},10000);
+
+},300);
+
+</script>
+
+</body>
+</html>
